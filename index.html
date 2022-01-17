@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind StarWarsFlix</title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body class="bg-gray-50 p-0 dark:bg-gray-900">
+        <nav id="nav" class="inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent pt-3 pb-3">
+
+                <div class="p-4">
+                    <div class="font-extrabold tracking-widest text-xl"><a href="index.html" class="transition duration-500 hover:text-indigo-500">STARWARSFLIX</a></div>
+                </div>
+        
+                <!-- Nav Items Working on Tablet & Bigger Sceen -->
+                <div class="p-4 hidden md:flex flex-row justify-between font-bold">
+                    <a id="hide-after-click" href="sign_up.html" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Sign Up</a>
+                    <a href="exclusives.html" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">Exclusive to us</a>
+                </div>
+        
+                <!-- Burger Nav Button on Mobile -->
+                <div id="nav-open" class="p-4 md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+            </nav>
+    
+        <!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+        <div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+            <div class="p-2 divide-y divide-gray-600 flex flex-col">
+                <a href="sign_up.html" class="p-2 font-semibold hover:text-indigo-700">Sign Up</a>
+                <a href="exclusives.html" class="p-2 font-semibold hover:text-indigo-700">Exclusive to us</a>
+            </div>
+        </div>
+
+
+        <main class="lg:relative lg:max-w-7xl lg:mx-auto">
+            <div class="h-64 sm:h-72 md:h-96 lg:w-1/2 lg:absolute lg:right-0 lg:h-full">
+              <img class="w-full h-screen bg-stormTroopers bg-cover bg-center"></img>
+            </div>
+
+            <div class="text-center pt-8 px-4 lg:w-1/2 lg:py-48 lg:text-left lg:max-w-lg">
+                <h1 class="text-4xl text-gray-900 font-extrabold tracking-tight dark:text-gray-100 sm:text-5xl md:text-6xl">
+                    Watch your favourite Star Wars <span class="block text-purple-700">Movies & TV series all in one place.</span>
+                </h1>
+<br>
+            <p class="text-lg text-gray-500 mt-3 max-w-md mx-auto dark:text-gray-400 sm:text-xl md:mt-5 md:max-w-3xl">Streaming available in HD & 4K UltraHD to all galaxies with an internet connection.
+              <br /> 
+              <br />
+              You may need to use the force if you experience buffering issues with a not so speedy connection!
+            </p>
+            
+            <div class="mt-10">
+                <a href="about.html" class="btn">
+                    Get Started!
+                </a>
+            </div>
+            </div>
+        </main>
+
+
+        <div class="text-center bg-black text-white inset-x-0 bottom-0 p-4">
+            
+            <footer class="border-t border-gray-200">
+                <div
+                  class="
+                    container
+                    flex flex-wrap
+                    items-center
+                    justify-center
+                    px-4
+                    py-8
+                    mx-auto
+                    lg:justify-between
+                  "
+                >
+                  <div class="flex flex-wrap justify-center">
+                    <ul class="flex items-center space-x-4">
+                      <li>Home</li>
+                      <li>About</li>
+                      <li>Contact</li>
+                      <li>Terms</li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center my-4 lg:my-0">
+                    
+                        <p>* Exclusiveness for web dev purposes only! 
+                        <br />
+                        The page content and images are from <a href="https://editorial.rottentomatoes.com/guide/star-wars-movies-in-order/">Rotten Tomatoes</a>
+                    </p>
+                </div>
+                      
+                  <div class="flex justify-center mt-4 lg:mt-0">
+                    <a>
+                      <svg
+                        fill="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-6 h-6 text-blue-600"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3">
+                      <svg
+                        fill="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-6 h-6 text-blue-300"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-6 h-6 text-pink-400"
+                        viewBox="0 0 24 24"
+                      >
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path
+                          d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3">
+                      <svg
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="0"
+                        class="w-6 h-6 text-blue-500"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="none"
+                          d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                        ></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+      
+    </body>
+</html>
+
+<!--  npx tailwindcss -i src/tailwind.css -o style.css --watch -->
